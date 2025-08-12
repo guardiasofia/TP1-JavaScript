@@ -18,3 +18,26 @@ console.log('-------------PUNTO 2.2-------------');
 console.log(`Nombre del segundo producto: ${productos[1].nombre}`);
 
 console.log(`Nombre del cuarto producto: ${productos[3].nombre}`);
+
+console.log('-------------PUNTO 3.1-------------');
+for(const producto of productos){
+  console.log(`${producto.nombre}, ${producto.precio}`);
+
+}
+
+console.log('-------------PUNTO 3.2-------------');
+productos.forEach(prod => {
+  console.log(`Producto: ${prod.nombre}, Precio: ${prod.precio}`);
+})
+
+console.log('-------------PUNTO 4.1-------------');
+productos.push(
+  {id: 6, nombre: 'Mermelada', precio: 1800, stock: 3},
+  {id: 7, nombre: 'Yerba', precio: 1300, stock: 8 }
+);
+
+console.log('-------------PUNTO 4.2-------------');
+
+productos.pop();
+
+
