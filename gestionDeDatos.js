@@ -52,3 +52,33 @@ console.log(productos)
 console.log('-------------PUNTO 4.5-------------');
 const productosConStock = productos.filter(producto => producto.stock > 0);
 console.log(productosConStock)
+
+console.log('-------------PUNTO 4.6-------------')
+const nombresProductos = productos.map(producto => producto.nombre)
+console.log(nombresProductos)
+
+console.log('-------------PUNTO 4.7-------------')
+const idProducto = 4
+
+const primerProductoId = productos.find(producto => producto.id === idProducto);
+
+if (primerProductoId) {
+  console.log('Producto encontrado:', primerProductoId);
+} else {
+  console.log(`No existe un producto con ID ${idProducto}`);
+}
+
+console.log('-------------PUNTO 4.8-------------')
+console.log('Array original:', productos);
+
+const productosOrdenados = productos.slice().sort((a, b) => b.precio - a.precio);
+
+console.log('Array ordenado por precio en orden decreciente:', productosOrdenados);
+
+
+
+
+
+
+
+
